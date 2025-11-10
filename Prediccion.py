@@ -5,48 +5,26 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import SimpleRNN, Dense, Dropout
-try:
-    from tensorflow.keras.optimizers import Adam
-except ImportError:
-    # Fallback to standalone Keras if tensorflow.keras.optimizers is not available
-    from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 
-# Lectura y filtrado (solo Municipio)
-df = pd.read_csv('Atlantico.csv')
-df.columns = df.columns.str.strip()
+# Lectura de datos limpios
+df = pd.read_csv('Barranquilla_HR.csv')
+df['FechaObservacion'] = pd.to_datetime(df['FechaObservacion'], errors='coerce')
+df = df.sort_values('FechaObservacion', ascending=True)
+df = df.dropna(subset=['ValorObservado'])
 
-if 'Municipio' not in df.columns:
-    raise KeyError("La columna 'Municipio' no existe en el CSV.")
-
-mask = df['Municipio'].astype(str).str.contains('barranquilla', case=False, na=False)
-f = df[mask].copy()
-
-if f.empty:
-    raise ValueError("No se encontraron filas de Barranquilla en 'Municipio'.")
-
-# Preparar fechas y valores (un valor por día: primer ValorObservado válido)
-if 'FechaObservacion' not in f.columns or 'ValorObservado' not in f.columns:
-    raise KeyError("Faltan 'FechaObservacion' o 'ValorObservado' en el CSV.")
-
-f['FechaObservacion'] = pd.to_datetime(f['FechaObservacion'], errors='coerce')
-f = f.sort_values('FechaObservacion', ascending=True)
-f['ValorObservado'] = pd.to_numeric(f['ValorObservado'], errors='coerce')
-f = f.dropna(subset=['ValorObservado'])
-f['Fecha'] = f['FechaObservacion'].dt.date
-unico_por_dia = f.groupby('Fecha', sort=True, as_index=False).first()
-
-# Eliminar filas cuyo ValorObservado sea 0 (no aportan información)
-count_before = len(unico_por_dia)
-unico_por_dia = unico_por_dia[unico_por_dia['ValorObservado'] != 0].copy()
-removed = count_before - len(unico_por_dia)
+# Eliminar valores == 0
+count_before = len(df)
+df = df[df['ValorObservado'] != 0].copy()
+removed = count_before - len(df)
 if removed > 0:
-    print(f"Se eliminaron {removed} día(s) con ValorObservado == 0")
+    print(f"Se eliminaron {removed} registro(s) con ValorObservado == 0")
 
-if unico_por_dia.empty:
-    raise ValueError("No quedan datos válidos después de eliminar ceros en 'ValorObservado'.")
+if df.empty:
+    raise ValueError("No quedan datos válidos después de eliminar ceros.")
 
-valores = unico_por_dia['ValorObservado'].to_numpy().reshape(-1, 1)
-print(f"Días disponibles (1 valor/día) tras eliminar ceros: {len(valores)}")
+valores = df['ValorObservado'].to_numpy().reshape(-1, 1)
+print(f"Registros disponibles: {len(valores)}")
 
 # Normalizar
 scaler = MinMaxScaler((0, 1))
@@ -63,9 +41,8 @@ def crear_secuencias(data, pasos):
 pasos_atras = 5
 X, y = crear_secuencias(valores_norm, pasos_atras)
 if len(X) == 0:
-    raise ValueError("No hay suficientes datos para crear secuencias. Reduce 'pasos_atras' o use más datos.")
+    raise ValueError("No hay suficientes datos para crear secuencias.")
 
-# Forma para RNN: (samples, timesteps, features)
 X = X.reshape(X.shape[0], pasos_atras, 1)
 
 # Dividir 80/20
@@ -73,7 +50,7 @@ train_size = int(len(X) * 0.8)
 X_train, X_test = X[:train_size], X[train_size:]
 y_train, y_test = y[:train_size], y[train_size:]
 
-# Modelo RNN (SimpleRNN)
+# Modelo RNN
 model = Sequential([
     SimpleRNN(64, return_sequences=True, input_shape=(pasos_atras, 1), dropout=0.2, recurrent_dropout=0.1),
     SimpleRNN(32, return_sequences=False, dropout=0.2, recurrent_dropout=0.1),
@@ -101,18 +78,17 @@ mae = mean_absolute_error(y_test_real, pred)
 
 print(f"\nMSE: {mse:.4f}  RMSE: {rmse:.4f}  MAE: {mae:.4f}")
 
-# Función para predecir pasos futuros usando la última secuencia disponible
+# Predicción futura
 def predecir_futuro(model, secuencia_inicial_norm, pasos_futuros):
     preds = []
     seq = secuencia_inicial_norm.copy()
     for _ in range(pasos_futuros):
-        p_norm = model.predict(seq.reshape(1, pasos_atras, 1))
+        p_norm = model.predict(seq.reshape(1, pasos_atras, 1), verbose=0)
         p_real = scaler.inverse_transform(p_norm)[0,0]
         preds.append(p_real)
         seq = np.append(seq[1:], p_norm).reshape(pasos_atras, 1)
     return preds
 
-# Uso interactivo: pedir cuantos pasos futuros
 try:
     pasos_futuros = int(input("¿Cuántos pasos en el futuro deseas predecir?: "))
 except Exception:
@@ -131,7 +107,7 @@ plt.plot(range(start_pred, start_pred + len(pred)), pred, linestyle='--', color=
 if pasos_futuros > 0:
     plt.plot(range(len(valores), len(valores) + len(futuros)), futuros, linestyle=':', color='green', label='Predicción futura')
 plt.legend()
-plt.xlabel('Días (ordenados)')
+plt.xlabel('Registros (ordenados)')
 plt.ylabel('Humedad (ValorObservado)')
-plt.title('Predicción RNN - Humedad en Barranquilla (1 valor/día)')
+plt.title('Predicción RNN - Humedad en Barranquilla')
 plt.show()

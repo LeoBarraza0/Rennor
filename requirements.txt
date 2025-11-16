@@ -4,9 +4,3 @@ matplotlib
 scikit-learn
 tensorflow-cpu==2.12.0
 openpyxl
-
-# opcionales (descomentar si las necesita tu script)
-# sqlalchemy
-# pymysql            # driver puro-Python para MySQL
-# si prefieres mysqlclient (libmysqlclient) descomenta y añade dependencias en el Dockerfile
-# mysqlclient

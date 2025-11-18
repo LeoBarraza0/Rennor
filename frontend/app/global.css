@@ -1,0 +1,78 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  
+  --color-primary: #5a7f8f;
+  --color-primary-light: #7a9faf;
+  --color-primary-dark: #3a5f6f;
+  --color-neutral-dark: #1a1f24;
+  --color-neutral-light: #f5f5f0;
+  --color-accent: #64b5f6;
+  --color-success: #4caf50;
+  --color-warning: #ff9800;
+}
+
+* {
+  @apply scroll-smooth;
+}
+
+html, body {
+  @apply bg-gradient-to-br from-neutral-dark via-neutral-dark to-primary-dark;
+  @apply text-neutral-light;
+  @apply font-sans;
+  height: 100%;
+  min-height: 100vh;
+}
+
+/* Animaciones personalizadas */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(90, 127, 143, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(90, 127, 143, 0.6);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glassmorphism */
+.glass-effect {
+  @apply backdrop-blur-md bg-white/5 border border-white/10;
+}
+
+.glass-effect-dark {
+  @apply backdrop-blur-md bg-black/20 border border-white/5;
+}

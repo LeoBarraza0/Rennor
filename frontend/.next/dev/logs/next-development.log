@@ -1,0 +1,49 @@
+[00:00:06.287] Server  LOG      ✓ Ready in 3.8s
+[00:01:12.785] Server  LOG      ○ Compiling / ...
+[00:01:27.225] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:48.216] Browser ERROR   [v0] Error fetching prediction: {}
+[00:03:48.216] Browser ERROR   Failed to fetch
+[00:05:14.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:19.615] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:40.383] Server  LOG      ✓ Compiled in 193ms
+[00:07:05.118] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:24.121] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:24.237] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:24.337] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:24.364] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:24.399] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:24.416] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:24.419] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:24.423] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:24.426] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:24.452] Server  ERROR   Prediction error: TypeError: fetch failed
+[00:12:25.083] Browser ERROR   [API] Error fetching prediction: {}
+[00:12:25.083] Browser ERROR   Error al generar predicción
+[00:19:21.543] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:19:21.547] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:19:21.549] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:19:21.554] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:19:21.555] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:19:21.557] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:19:21.559] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:19:21.563] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:19:21.565] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:19:21.574] Server  ERROR   Prediction error: TypeError: fetch failed
+[00:19:22.086] Browser ERROR   [API] Error fetching prediction: {}
+[00:19:22.087] Browser ERROR   Error al generar predicción
+[00:26:46.363] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:55.467] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:55.481] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:55.483] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:55.486] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:55.532] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:55.535] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:55.539] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:55.564] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:55.567] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:55.579] Server  ERROR   Prediction error: TypeError: fetch failed
+[00:27:56.082] Browser ERROR   [API] Error fetching prediction: {}
+[00:27:56.082] Browser ERROR   Error al generar predicción
+[00:29:27.553] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:31.080] Browser ERROR   [API] Error fetching prediction: {}
+[00:33:31.081] Browser ERROR   Número de días debe estar entre 1 y 30

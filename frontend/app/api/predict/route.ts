@@ -11,28 +11,32 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Llamar a tu backend Flask
     const flaskUrl = process.env.FLASK_BACKEND_URL || 'http://localhost:5000';
-    
+
     const response = await fetch(`${flaskUrl}/api/prediccion`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({ dias_futuros }),
     });
 
-    if (!response.ok) {
-      throw new Error(`Flask error: ${response.statusText}`);
+    // Debug / diagnóstico: leer body aunque status !== 200
+    const text = await response.text();
+    let data;
+    try {
+      data = text ? JSON.parse(text) : {};
+    } catch (e) {
+      // si no es JSON, dejar el texto crudo
+      data = { raw: text };
     }
 
-    const data = await response.json();
+    // Registrar para debugging en servidor Next
+    console.log('Flask response status:', response.status);
+    console.log('Flask response body:', data);
 
-    return NextResponse.json({
-      success: true,
-      predicciones: data.predicciones,
-      metricas: data.metricas,
-    });
+    // Reenviar exactamente lo que devolvió Flask (status + body)
+    return NextResponse.json(data, { status: response.status });
   } catch (error) {
-    console.error('Prediction error:', error);
+    console.error('Prediction error (route.ts):', error);
     return NextResponse.json(
       { error: 'Error al generar predicción' },
       { status: 500 }

@@ -8,8 +8,9 @@ import { StatsDisplay } from "@/components/stats-display"
 import { MetricsDisplay } from "@/components/metrics-display"
 import { RNNExplanation } from "@/components/rnn-explanation"
 import { NeuralNetworkViz } from "@/components/neural-network-viz"
+import ComparisonChart from "@/components/comparison-chart"
 import { getPrediction } from "@/lib/api"
-import type { Metrics } from "@/lib/api"
+import type { Metrics, ComparisonData } from "@/lib/api"
 
 type TabType = "prediccion" | "info"
 
@@ -22,9 +23,12 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<TabType>("prediccion")
   const [predictions, setPredictions] = useState<number[] | null>(null)
   const [metrics, setMetrics] = useState<Metrics | null>(null)
+  const [comparisonData, setComparisonData] = useState<ComparisonData | null>(null)
   const [chartData, setChartData] = useState<ChartData[] | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+
+  // DEBUG: (removido) console.log de inspección
 
   const handlePrediction = async (dias: number) => {
     setIsLoading(true)
@@ -32,9 +36,10 @@ export default function Home() {
 
     try {
       const response = await getPrediction(dias)
-      const data = response.predicciones
+      const data = response.predicciones ?? []
       setPredictions(data)
-      setMetrics(response.metricas)
+      setMetrics(response.metricas ?? null)
+      setComparisonData(response.datos_comparacion ?? null)
 
       const formatted = data.map((humedad, idx) => ({
         dia: idx + 1,
@@ -61,7 +66,6 @@ export default function Home() {
       <Header />
 
       <div className="max-w-6xl mx-auto px-4 py-8">
-        {/* Tab Navigation */}
         <div className="flex gap-2 mb-8 border-b border-white/10 pb-4">
           {tabs.map((tab) => (
             <button
@@ -81,12 +85,10 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Error Display */}
         {error && (
           <div className="mb-6 p-4 bg-red-500/10 border border-red-500/30 rounded-lg text-red-300 text-sm">{error}</div>
         )}
 
-        {/* Tab Content */}
         {activeTab === "prediccion" && (
           <div className="space-y-6 animate-fade-in-up">
             <PredictionForm onSubmit={handlePrediction} isLoading={isLoading} />
@@ -96,6 +98,17 @@ export default function Home() {
                 <PredictionChart data={chartData} isLoading={isLoading} />
                 <StatsDisplay data={predictions} />
                 <MetricsDisplay metrics={metrics} />
+
+                {comparisonData && comparisonData.fechas_pasadas?.length > 0 && (
+                  <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all duration-300">
+                    <ComparisonChart
+                      fechas={comparisonData.fechas_pasadas}
+                      valoresReales={comparisonData.valores_reales}
+                      valoresPredichos={comparisonData.valores_predichos}
+                    />
+                  </div>
+                )}
+                {/* Debug JSON panel removed */}
               </>
             )}
 
@@ -115,7 +128,6 @@ export default function Home() {
         )}
       </div>
 
-      {/* Footer */}
       <footer className="border-t border-white/10 mt-12 py-6">
         <div className="max-w-6xl mx-auto px-4 text-center text-neutral-light/50 text-xs">
           <p>RENNOR - Red Neuronal Recurrente para Predicción de Humedad Relativa</p>

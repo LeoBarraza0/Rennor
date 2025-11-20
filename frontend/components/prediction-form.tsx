@@ -1,64 +1,55 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Card } from '@/components/ui/card'
+import type React from "react"
+
+import { useState } from "react"
 
 interface PredictionFormProps {
-  onSubmit: (dias: number) => Promise<void>
+  onSubmit: (dias: number) => void
   isLoading: boolean
 }
 
 export function PredictionForm({ onSubmit, isLoading }: PredictionFormProps) {
-  const [dias, setDias] = useState(7)
+  const [dias, setDias] = useState("7")
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    if (dias >= 1) {
-      await onSubmit(dias)
+    const diasNum = Number.parseInt(dias, 10)
+    if (diasNum > 0) {
+      onSubmit(diasNum)
     }
   }
 
   return (
-    <Card className="glass-effect p-6 rounded-2xl border-white/10">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+    <form
+      onSubmit={handleSubmit}
+      className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all duration-300"
+    >
+      <div className="space-y-4">
         <div>
-          <label className="block text-sm font-medium text-neutral-light mb-2">
-            Días a predecir
+          <label htmlFor="dias" className="block text-sm font-medium text-neutral-light mb-2">
+            Días a Predecir
           </label>
-          <div className="flex gap-3 items-end">
-            <Input
-              type="number"
-              min="1"
-              value={dias}
-              onChange={(e) => setDias(Math.max(1, parseInt(e.target.value) || 1))}
-              className="flex-1 bg-white/5 border-white/20 text-neutral-light placeholder-neutral-light/50 rounded-lg"
-              placeholder="7"
-              disabled={isLoading}
-            />
-            <span className="text-xs text-neutral-light/70">días</span>
-          </div>
-          <p className="text-xs text-neutral-light/60 mt-2">
-            Valor recomendado: 7 días
-          </p>
+          <input
+            type="number"
+            id="dias"
+            value={dias}
+            onChange={(e) => setDias(e.target.value)}
+            min="1"
+            className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-neutral-light placeholder-neutral-light/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+            placeholder="Ingresa número de días"
+          />
+          <p className="text-xs text-neutral-light/50 mt-2">Recomendado: 7 días</p>
         </div>
 
-        <Button
+        <button
           type="submit"
           disabled={isLoading}
-          className="bg-primary hover:bg-primary-light text-neutral-light font-semibold py-2 rounded-lg transition-all duration-300 disabled:opacity-50"
+          className="w-full px-6 py-3 bg-gradient-to-r from-primary to-primary-light text-neutral-dark font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
         >
-          {isLoading ? (
-            <span className="flex items-center gap-2">
-              <span className="inline-block w-4 h-4 border-2 border-neutral-light/30 border-t-neutral-light rounded-full animate-spin" />
-              Generando predicción...
-            </span>
-          ) : (
-            'Generar Predicción'
-          )}
-        </Button>
-      </form>
-    </Card>
+          {isLoading ? "Generando Predicción..." : "Generar Predicción"}
+        </button>
+      </div>
+    </form>
   )
 }

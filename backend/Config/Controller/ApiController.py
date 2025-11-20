@@ -1,82 +1,94 @@
 from flask import Blueprint, request, jsonify
-from Prediccion import generar_prediccion
 import os
 import traceback
-from datetime import datetime, timedelta
+import math
+import numpy as np
+from datetime import datetime
+import logging
 
 # Blueprint para rutas API
 routes_Api = Blueprint('api', __name__)
 
-@routes_Api.route('/prediccion', methods=['POST', 'OPTIONS'])
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
 @routes_Api.route('/prediccion', methods=['POST', 'OPTIONS'])
 def prediccion():
-    """
-    Endpoint para generar predicción RNN de humedad relativa
-    """
     if request.method == 'OPTIONS':
-        return '', 204
-    
+        return ('', 204)
+
     try:
-        data = request.get_json()
+        data = request.get_json(silent=True) or {}
         dias_futuros = int(data.get('dias_futuros', 7))
-        
-        if dias_futuros < 1 or dias_futuros > 30:
-            return jsonify({
-                'success': False,
-                'error': 'El rango de días debe estar entre 1 y 30'
-            }), 400
-        
-        csv_path = os.path.join('Config', 'static', 'Barranquilla_HR.csv')
-        if not os.path.exists(csv_path):
-            csv_path = 'Barranquilla_HR.csv'
-        
-        if not os.path.exists(csv_path):
-            return jsonify({
-                'success': False,
-                'error': f'No se encontró el archivo CSV en {csv_path}'
-            }), 404
-        
-        print(f"[PREDICCION] Generando predicción para {dias_futuros} días...")
-        print(f"[PREDICCION] Usando archivo: {csv_path}")
-        
-        resultado = generar_prediccion(
-            pasos_futuros=dias_futuros,
-            csv_path=csv_path,
-            verbose=1
-        )
-        
-        predicciones = resultado['predicciones']
-        metricas = resultado['metricas']
-        
-        if not predicciones:
-            return jsonify({
-                'success': False,
-                'error': 'No se pudieron generar predicciones'
-            }), 500
-        
-        hoy = datetime.now()
-        fechas = [(hoy + timedelta(days=i+1)).strftime('%Y-%m-%d') for i in range(len(predicciones))]
-        
-        return jsonify({
-            'success': True,
-            'predicciones': predicciones,
-            'dias': dias_futuros,
-            'fechas': fechas,
-            'metricas': {
-                'mse': round(metricas['mse'], 2),
-                'rmse': round(metricas['rmse'], 2),
-                'mae': round(metricas['mae'], 2),
-                'r_squared': round(metricas['r_squared'], 4)
-            },
-            'timestamp': datetime.now().isoformat()
-        }), 200
-    
+
+        csv_paths = [
+            os.path.join(os.getcwd(), 'Config', 'static', 'Barranquilla_HR.csv'),
+            os.path.join(os.getcwd(), 'Barranquilla_HR.csv'),
+            'Config/static/Barranquilla_HR.csv',
+            'Barranquilla_HR.csv'
+        ]
+        csv_path = next((p for p in csv_paths if os.path.exists(p)), None)
+        if csv_path is None:
+            raise FileNotFoundError("CSV no encontrado en rutas esperadas")
+
+        from Prediccion import generar_prediccion
+        resultado = generar_prediccion(dias_futuros, csv_path=csv_path, verbose=0)
+
+        # Función recursiva para sanitizar NaN/Inf y convertir tipos numpy a nativos
+        def sanitize(obj):
+            # dict -> sanitizar valores
+            if isinstance(obj, dict):
+                return {k: sanitize(v) for k, v in obj.items()}
+
+            # numpy array -> convertir a lista y sanitizar
+            if isinstance(obj, np.ndarray):
+                return [sanitize(v) for v in obj.tolist()]
+
+            # list/tuple -> sanitizar elemento a elemento
+            if isinstance(obj, (list, tuple)):
+                return [sanitize(v) for v in obj]
+
+            # numpy scalar -> convertir a python native y sanitizar
+            if isinstance(obj, np.generic):
+                return sanitize(obj.item())
+
+            # floats: reemplazar NaN/Inf por None
+            if isinstance(obj, float):
+                if math.isnan(obj) or math.isinf(obj):
+                    return None
+                return float(obj)
+
+            # ints/bools/strs ya son serializables
+            if isinstance(obj, (int, bool, str)):
+                return obj
+
+            # fallback: intentar convertir tipos numéricos de numpy (ej. numpy.int64)
+            try:
+                if hasattr(obj, 'item'):
+                    return sanitize(obj.item())
+            except Exception:
+                pass
+
+            # si no se reconoce el tipo, devolverlo tal cual (Flask/jsonify lo convertirá o fallará)
+            return obj
+
+        safe_result = sanitize(resultado)
+        # Asegurar que la respuesta incluya un indicador de éxito para el frontend
+        if isinstance(safe_result, dict):
+            safe_result.setdefault('success', True)
+        else:
+            safe_result = {'success': True, 'data': safe_result}
+
+        logger.info("Predicción generada exitosamente")
+        return jsonify(safe_result), 200
+
     except FileNotFoundError as e:
-        print(f"[ERROR] Archivo no encontrado: {str(e)}")
-        return jsonify({
-            'success': False,
-            'error': f'Archivo no encontrado: {str(e)}'
-        }), 404
+        logger.error(str(e))
+        return jsonify({"error": str(e)}), 404
+
+    except ValueError as e:
+        logger.error(str(e))
+        return jsonify({"error": str(e)}), 400
     
     except ValueError as e:
         print(f"[ERROR] Validación: {str(e)}")

@@ -9,16 +9,6 @@ from tensorflow.keras.optimizers import Adam
 import os
 
 def generar_prediccion(pasos_futuros, csv_path=None, verbose=0):
-    """
-    Genera predicción usando RNN para humedad relativa
-    Args:
-        pasos_futuros: número de pasos a predecir
-        csv_path: ruta al CSV (si None, busca en ubicaciones comunes)
-        verbose: 0=silencioso, 1=normal, 2=detallado
-    Returns:
-        dict con estructura {'predicciones': [...], 'metricas': {...}}
-    """
-    
     # Determinar ruta del CSV
     if csv_path is None:
         csv_path = 'Barranquilla_HR.csv'
@@ -33,7 +23,8 @@ def generar_prediccion(pasos_futuros, csv_path=None, verbose=0):
     df = pd.read_csv(csv_path, sep=';')
     df['FechaObservacion'] = pd.to_datetime(df['FechaObservacion'], errors='coerce')
     df = df.sort_values('FechaObservacion', ascending=True)
-    df = df.dropna(subset=['ValorObservado'])
+    # Eliminar filas sin fecha o sin valor observado
+    df = df.dropna(subset=['ValorObservado', 'FechaObservacion'])
 
     # Eliminar valores == 0
     count_before = len(df)
@@ -46,6 +37,22 @@ def generar_prediccion(pasos_futuros, csv_path=None, verbose=0):
         raise ValueError("No quedan datos válidos después de eliminar ceros.")
 
     valores = df['ValorObservado'].to_numpy().reshape(-1, 1)
+    # Asegurar que las fechas sean strings ISO y no contengan NaN/NaT
+    fechas_originales = df['FechaObservacion'].dt.strftime('%Y-%m-%d').astype(str).tolist()
+
+    # Preparar historial completo (fechas y valores) para devolver opcionalmente
+    historial_fechas = fechas_originales.copy()
+    historial_valores = valores.flatten().tolist()
+
+    # Helper: downsampling uniforme de una lista a max_points
+    def downsample_list(lst, max_points=1200):
+        n = len(lst)
+        if n <= max_points:
+            return lst
+        # crear índices espaciados uniformemente entre 0 y n-1
+        indices = np.linspace(0, n - 1, max_points).round().astype(int)
+        return [lst[i] for i in indices]
+    
     if verbose > 0:
         print(f"Registros disponibles: {len(valores)}")
 
@@ -88,7 +95,7 @@ def generar_prediccion(pasos_futuros, csv_path=None, verbose=0):
         model.summary()
 
     # Entrenamiento
-    epochs = 100
+    epochs = 2
     batch_size = 8
     model.fit(X_train, y_train, epochs=epochs, batch_size=batch_size, validation_data=(X_test, y_test), verbose=verbose)
 
@@ -112,6 +119,14 @@ def generar_prediccion(pasos_futuros, csv_path=None, verbose=0):
         print(f"  MAE: {mae:.4f}")
         print(f"  R²: {r_squared:.4f}")
 
+    # Mostrar toda la serie de comparación (no truncar a 30) para graficar todos los datos de prueba
+    num_comparacion = len(y_test_real)
+    indice_inicio_test = train_size + pasos_atras
+    # fechas_originales contiene fechas para todos los registros; extraer las que corresponden al conjunto de test
+    fechas_comparacion = fechas_originales[indice_inicio_test:indice_inicio_test + len(y_test_real)]
+    valores_reales_comparacion = y_test_real.flatten().tolist()
+    valores_predichos_comparacion = pred.flatten().tolist()
+
     predicciones = []
     
     if pasos_futuros > 0:
@@ -128,6 +143,11 @@ def generar_prediccion(pasos_futuros, csv_path=None, verbose=0):
         secuencia_inicial = valores_norm[-pasos_atras:].reshape(pasos_atras, 1)
         predicciones = predecir_futuro(model, secuencia_inicial, pasos_futuros)
 
+    # Preparar historial (aplicar downsampling si la serie es muy larga)
+    max_hist_points = 1200
+    historial_down_fechas = downsample_list(historial_fechas, max_points=max_hist_points)
+    historial_down_valores = downsample_list(historial_valores, max_points=max_hist_points)
+
     return {
         'predicciones': predicciones,
         'metricas': {
@@ -135,6 +155,16 @@ def generar_prediccion(pasos_futuros, csv_path=None, verbose=0):
             'rmse': rmse,
             'mae': mae,
             'r_squared': r_squared
+        },
+        'datos_comparacion': {
+            'fechas_pasadas': fechas_comparacion,
+            'valores_reales': valores_reales_comparacion,
+            'valores_predichos': valores_predichos_comparacion
+        },
+        'historial': {
+            'fechas': historial_down_fechas,
+            'valores': historial_down_valores,
+            'original_length': len(historial_fechas)
         }
     }
 

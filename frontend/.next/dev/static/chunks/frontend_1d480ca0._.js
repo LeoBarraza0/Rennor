@@ -1,0 +1,1451 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/frontend/components/header.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Header",
+    ()=>Header
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+'use client';
+;
+function Header() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+        className: "sticky top-0 z-50 backdrop-blur-lg border-b border-white/10",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-6xl mx-auto px-4 py-4 flex items-center gap-4",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "relative w-12 h-12",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-full blur-lg"
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/header.tsx",
+                            lineNumber: 11,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative w-full h-full bg-primary rounded-full flex items-center justify-center font-bold text-white text-lg",
+                            children: "💧"
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/header.tsx",
+                            lineNumber: 12,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/frontend/components/header.tsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-2xl font-bold text-neutral-light",
+                            children: "RENNOR"
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/header.tsx",
+                            lineNumber: 17,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-xs text-neutral-light/60",
+                            children: "RNN para Predicción de Humedad"
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/header.tsx",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/frontend/components/header.tsx",
+                    lineNumber: 16,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/frontend/components/header.tsx",
+            lineNumber: 9,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/frontend/components/header.tsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, this);
+}
+_c = Header;
+var _c;
+__turbopack_context__.k.register(_c, "Header");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/frontend/components/prediction-form.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "PredictionForm",
+    ()=>PredictionForm
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+function PredictionForm({ onSubmit, isLoading }) {
+    _s();
+    const [dias, setDias] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("7");
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        const diasNum = Number.parseInt(dias, 10);
+        if (diasNum > 0) {
+            onSubmit(diasNum);
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+        onSubmit: handleSubmit,
+        className: "bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all duration-300",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "space-y-4",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                            htmlFor: "dias",
+                            className: "block text-sm font-medium text-neutral-light mb-2",
+                            children: "Días a Predecir"
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/prediction-form.tsx",
+                            lineNumber: 30,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                            type: "number",
+                            id: "dias",
+                            value: dias,
+                            onChange: (e)=>setDias(e.target.value),
+                            min: "1",
+                            className: "w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-neutral-light placeholder-neutral-light/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all",
+                            placeholder: "Ingresa número de días"
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/prediction-form.tsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-xs text-neutral-light/50 mt-2",
+                            children: "Recomendado: 7 días"
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/prediction-form.tsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/frontend/components/prediction-form.tsx",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    type: "submit",
+                    disabled: isLoading,
+                    className: "w-full px-6 py-3 bg-gradient-to-r from-primary to-primary-light text-neutral-dark font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300",
+                    children: isLoading ? "Generando Predicción..." : "Generar Predicción"
+                }, void 0, false, {
+                    fileName: "[project]/frontend/components/prediction-form.tsx",
+                    lineNumber: 45,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/frontend/components/prediction-form.tsx",
+            lineNumber: 28,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/frontend/components/prediction-form.tsx",
+        lineNumber: 24,
+        columnNumber: 5
+    }, this);
+}
+_s(PredictionForm, "FlGgdC7aS5upcUs0c8FN3kGx/P4=");
+_c = PredictionForm;
+var _c;
+__turbopack_context__.k.register(_c, "PredictionForm");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/frontend/lib/utils.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "cn",
+    ()=>cn
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/tailwind-merge/dist/bundle-mjs.mjs [app-client] (ecmascript)");
+;
+;
+function cn(...inputs) {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["twMerge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["clsx"])(inputs));
+}
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/frontend/components/ui/card.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Card",
+    ()=>Card,
+    "CardContent",
+    ()=>CardContent,
+    "CardDescription",
+    ()=>CardDescription,
+    "CardFooter",
+    ()=>CardFooter,
+    "CardHeader",
+    ()=>CardHeader,
+    "CardTitle",
+    ()=>CardTitle
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/lib/utils.ts [app-client] (ecmascript)");
+;
+;
+;
+const Card = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"](_c = ({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('rounded-lg border border-white/10 bg-white/5 text-neutral-light shadow-sm', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/frontend/components/ui/card.tsx",
+        lineNumber: 8,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0)));
+_c1 = Card;
+Card.displayName = 'Card';
+const CardHeader = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"](_c2 = ({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('flex flex-col space-y-1.5 p-6', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/frontend/components/ui/card.tsx",
+        lineNumber: 23,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0)));
+_c3 = CardHeader;
+CardHeader.displayName = 'CardHeader';
+const CardTitle = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"](_c4 = ({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('text-2xl font-semibold leading-none tracking-tight', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/frontend/components/ui/card.tsx",
+        lineNumber: 35,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0)));
+_c5 = CardTitle;
+CardTitle.displayName = 'CardTitle';
+const CardDescription = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"](_c6 = ({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('text-sm text-neutral-light/70', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/frontend/components/ui/card.tsx",
+        lineNumber: 50,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0)));
+_c7 = CardDescription;
+CardDescription.displayName = 'CardDescription';
+const CardContent = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"](_c8 = ({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('p-6 pt-0', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/frontend/components/ui/card.tsx",
+        lineNumber: 62,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0)));
+_c9 = CardContent;
+CardContent.displayName = 'CardContent';
+const CardFooter = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"](_c10 = ({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('flex items-center p-6 pt-0', className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/frontend/components/ui/card.tsx",
+        lineNumber: 70,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0)));
+_c11 = CardFooter;
+CardFooter.displayName = 'CardFooter';
+;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11;
+__turbopack_context__.k.register(_c, "Card$React.forwardRef");
+__turbopack_context__.k.register(_c1, "Card");
+__turbopack_context__.k.register(_c2, "CardHeader$React.forwardRef");
+__turbopack_context__.k.register(_c3, "CardHeader");
+__turbopack_context__.k.register(_c4, "CardTitle$React.forwardRef");
+__turbopack_context__.k.register(_c5, "CardTitle");
+__turbopack_context__.k.register(_c6, "CardDescription$React.forwardRef");
+__turbopack_context__.k.register(_c7, "CardDescription");
+__turbopack_context__.k.register(_c8, "CardContent$React.forwardRef");
+__turbopack_context__.k.register(_c9, "CardContent");
+__turbopack_context__.k.register(_c10, "CardFooter$React.forwardRef");
+__turbopack_context__.k.register(_c11, "CardFooter");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/frontend/components/prediction-chart.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "PredictionChart",
+    ()=>PredictionChart
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$chart$2f$LineChart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/chart/LineChart.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/Line.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$XAxis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/XAxis.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/YAxis.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$CartesianGrid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/CartesianGrid.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/Tooltip.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$ResponsiveContainer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/ResponsiveContainer.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/ui/card.tsx [app-client] (ecmascript)");
+'use client';
+;
+;
+;
+function PredictionChart({ data, isLoading }) {
+    if (isLoading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+            className: "glass-effect p-6 rounded-2xl flex items-center justify-center h-80 border-white/10",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "inline-block w-12 h-12 border-3 border-primary/30 border-t-primary rounded-full animate-spin mb-3"
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/components/prediction-chart.tsx",
+                        lineNumber: 21,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-neutral-light/70",
+                        children: "Procesando predicción..."
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/components/prediction-chart.tsx",
+                        lineNumber: 22,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/frontend/components/prediction-chart.tsx",
+                lineNumber: 20,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/frontend/components/prediction-chart.tsx",
+            lineNumber: 19,
+            columnNumber: 7
+        }, this);
+    }
+    if (!data || data.length === 0) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+            className: "glass-effect p-6 rounded-2xl flex items-center justify-center h-80 border-white/10",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-center",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "text-neutral-light/70",
+                    children: 'Ingresa los días y haz clic en "Generar Predicción"'
+                }, void 0, false, {
+                    fileName: "[project]/frontend/components/prediction-chart.tsx",
+                    lineNumber: 32,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/frontend/components/prediction-chart.tsx",
+                lineNumber: 31,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/frontend/components/prediction-chart.tsx",
+            lineNumber: 30,
+            columnNumber: 7
+        }, this);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+        className: "glass-effect p-6 rounded-2xl border-white/10",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                className: "text-lg font-semibold text-neutral-light mb-4",
+                children: "Predicción de Humedad Relativa"
+            }, void 0, false, {
+                fileName: "[project]/frontend/components/prediction-chart.tsx",
+                lineNumber: 40,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$ResponsiveContainer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ResponsiveContainer"], {
+                width: "100%",
+                height: 350,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$chart$2f$LineChart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LineChart"], {
+                    data: data,
+                    margin: {
+                        top: 5,
+                        right: 30,
+                        left: 0,
+                        bottom: 5
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$CartesianGrid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CartesianGrid"], {
+                            strokeDasharray: "3 3",
+                            stroke: "rgba(255,255,255,0.1)"
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/prediction-chart.tsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$XAxis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["XAxis"], {
+                            dataKey: "dia",
+                            stroke: "rgba(255,255,255,0.5)",
+                            label: {
+                                value: 'Día',
+                                position: 'insideBottomRight',
+                                offset: -5,
+                                fill: 'rgba(255,255,255,0.7)'
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/prediction-chart.tsx",
+                            lineNumber: 44,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["YAxis"], {
+                            stroke: "rgba(255,255,255,0.5)",
+                            domain: [
+                                0,
+                                100
+                            ],
+                            label: {
+                                value: 'Humedad (%)',
+                                angle: -90,
+                                position: 'insideLeft',
+                                fill: 'rgba(255,255,255,0.7)'
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/prediction-chart.tsx",
+                            lineNumber: 49,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tooltip"], {
+                            contentStyle: {
+                                backgroundColor: 'rgba(26, 31, 36, 0.95)',
+                                border: '1px solid rgba(255,255,255,0.2)',
+                                borderRadius: '8px',
+                                color: 'rgb(245, 245, 240)'
+                            },
+                            formatter: (value)=>[
+                                    `${value.toFixed(2)}%`,
+                                    'Humedad'
+                                ],
+                            cursor: {
+                                stroke: 'rgba(100, 181, 246, 0.5)'
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/prediction-chart.tsx",
+                            lineNumber: 54,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Line"], {
+                            type: "monotone",
+                            dataKey: "humedad",
+                            stroke: "#64b5f6",
+                            strokeWidth: 3,
+                            dot: {
+                                fill: '#5a7f8f',
+                                r: 5
+                            },
+                            activeDot: {
+                                r: 7
+                            },
+                            isAnimationActive: true,
+                            animationDuration: 800
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/prediction-chart.tsx",
+                            lineNumber: 64,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/frontend/components/prediction-chart.tsx",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/frontend/components/prediction-chart.tsx",
+                lineNumber: 41,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/frontend/components/prediction-chart.tsx",
+        lineNumber: 39,
+        columnNumber: 5
+    }, this);
+}
+_c = PredictionChart;
+var _c;
+__turbopack_context__.k.register(_c, "PredictionChart");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/frontend/components/stats-display.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "StatsDisplay",
+    ()=>StatsDisplay
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/ui/card.tsx [app-client] (ecmascript)");
+'use client';
+;
+;
+function StatsDisplay({ data }) {
+    if (!data || data.length === 0) {
+        return null;
+    }
+    const avg = (data.reduce((a, b)=>a + b, 0) / data.length).toFixed(2);
+    const max = Math.max(...data).toFixed(2);
+    const min = Math.min(...data).toFixed(2);
+    const stats = [
+        {
+            label: 'Promedio',
+            value: `${avg}%`,
+            color: 'from-accent to-blue-600'
+        },
+        {
+            label: 'Máximo',
+            value: `${max}%`,
+            color: 'from-warning to-orange-600'
+        },
+        {
+            label: 'Mínimo',
+            value: `${min}%`,
+            color: 'from-success to-green-600'
+        }
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "grid grid-cols-3 gap-4",
+        children: stats.map((stat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                className: "glass-effect p-4 rounded-lg border-white/10 text-center hover:border-white/20 transition-all duration-300",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-xs text-neutral-light/70 mb-2",
+                        children: stat.label
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/components/stats-display.tsx",
+                        lineNumber: 31,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: `text-2xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`,
+                        children: stat.value
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/components/stats-display.tsx",
+                        lineNumber: 32,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, stat.label, true, {
+                fileName: "[project]/frontend/components/stats-display.tsx",
+                lineNumber: 27,
+                columnNumber: 9
+            }, this))
+    }, void 0, false, {
+        fileName: "[project]/frontend/components/stats-display.tsx",
+        lineNumber: 25,
+        columnNumber: 5
+    }, this);
+}
+_c = StatsDisplay;
+var _c;
+__turbopack_context__.k.register(_c, "StatsDisplay");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/frontend/components/metrics-display.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "MetricsDisplay",
+    ()=>MetricsDisplay
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/ui/card.tsx [app-client] (ecmascript)");
+"use client";
+;
+;
+function MetricsDisplay({ metrics }) {
+    if (!metrics) {
+        return null;
+    }
+    const metricsData = [
+        {
+            label: "MSE",
+            value: metrics.mse.toFixed(2),
+            description: "Error Cuadrático Medio",
+            color: "from-blue-400 to-blue-600",
+            icon: "📊"
+        },
+        {
+            label: "RMSE",
+            value: metrics.rmse.toFixed(2),
+            description: "Raíz del Error Cuadrático",
+            color: "from-purple-400 to-purple-600",
+            icon: "📈"
+        },
+        {
+            label: "MAE",
+            value: metrics.mae.toFixed(2),
+            description: "Error Absoluto Medio",
+            color: "from-orange-400 to-orange-600",
+            icon: "📉"
+        },
+        {
+            label: "R²",
+            value: (metrics.r_squared * 100).toFixed(1) + "%",
+            description: "Coeficiente de Determinación",
+            color: "from-green-400 to-green-600",
+            icon: "✓"
+        }
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                className: "text-lg font-semibold text-neutral-light mb-4 flex items-center gap-2",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "text-xl",
+                        children: "📊"
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/components/metrics-display.tsx",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, this),
+                    "Métricas del Modelo"
+                ]
+            }, void 0, true, {
+                fileName: "[project]/frontend/components/metrics-display.tsx",
+                lineNumber: 48,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3",
+                children: metricsData.map((metric)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                        className: "glass-effect p-4 rounded-lg border-white/10 hover:border-white/20 transition-all duration-300 group cursor-pointer",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-start justify-between mb-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-xs text-neutral-light/70 font-medium",
+                                        children: metric.label
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/metrics-display.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-lg opacity-60 group-hover:opacity-100 transition-opacity",
+                                        children: metric.icon
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/metrics-display.tsx",
+                                        lineNumber: 60,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/frontend/components/metrics-display.tsx",
+                                lineNumber: 58,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: `text-2xl font-bold bg-gradient-to-r ${metric.color} bg-clip-text text-transparent mb-1`,
+                                children: metric.value
+                            }, void 0, false, {
+                                fileName: "[project]/frontend/components/metrics-display.tsx",
+                                lineNumber: 62,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-xs text-neutral-light/50",
+                                children: metric.description
+                            }, void 0, false, {
+                                fileName: "[project]/frontend/components/metrics-display.tsx",
+                                lineNumber: 65,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, metric.label, true, {
+                        fileName: "[project]/frontend/components/metrics-display.tsx",
+                        lineNumber: 54,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/frontend/components/metrics-display.tsx",
+                lineNumber: 52,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/frontend/components/metrics-display.tsx",
+        lineNumber: 47,
+        columnNumber: 5
+    }, this);
+}
+_c = MetricsDisplay;
+var _c;
+__turbopack_context__.k.register(_c, "MetricsDisplay");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/frontend/components/rnn-explanation.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "RNNExplanation",
+    ()=>RNNExplanation
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/ui/card.tsx [app-client] (ecmascript)");
+'use client';
+;
+;
+function RNNExplanation() {
+    const sections = [
+        {
+            title: 'Qué es una Red Neuronal Recurrente (RNN)',
+            content: 'Una RNN es un tipo de red neuronal artificial diseñada para procesar datos secuenciales. A diferencia de las redes neuronales tradicionales, las RNNs tienen conexiones que se realimentan a sí mismas, lo que les permite mantener un "estado" o "memoria" del pasado. Esto las hace ideales para series temporales, donde el valor actual depende fuertemente de los valores anteriores.'
+        },
+        {
+            title: 'Arquitectura de la RNN',
+            content: 'La arquitectura utilizada en RENNOR consta de capas LSTM (Long Short-Term Memory) que mejoran la capacidad de la red para aprender dependencias a largo plazo. Las LSTM resuelven el problema del "vanishing gradient" mediante celdas de memoria especializadas.',
+            formula: 'h_t = tanh(W_h * [h_{t-1}, x_t] + b_h)'
+        },
+        {
+            title: 'Función de Activación: ReLU',
+            content: 'La función de activación ReLU (Rectified Linear Unit) es utilizada en las capas ocultas de RENNOR. Esta función es simple pero efectiva: retorna 0 para valores negativos y el valor original para valores positivos. Permite que la red aprenda representaciones no lineales complejas.',
+            formula: 'ReLU(x) = max(0, x)'
+        },
+        {
+            title: 'Función de Activación: Tanh',
+            content: 'En la capa de salida se utiliza Tanh (tangente hiperbólica) que normaliza los valores entre -1 y 1. Esta función es simétrica alrededor del origen y facilita el aprendizaje al centrar los datos.',
+            formula: 'tanh(x) = (e^x - e^{-x}) / (e^x + e^{-x})'
+        },
+        {
+            title: 'Optimización: Adam',
+            content: 'El optimizador Adam (Adaptive Moment Estimation) es un método de descenso de gradiente adaptativo que combina las ventajas de AdaGrad y RMSProp. Ajusta automáticamente la tasa de aprendizaje para cada parámetro durante el entrenamiento.'
+        },
+        {
+            title: 'Métrica de Pérdida: MSE',
+            content: 'Se utiliza Mean Squared Error (MSE) como función de pérdida. Calcula el promedio de los errores al cuadrado entre las predicciones y los valores reales. MSE penaliza más los errores grandes, lo que es ideal para predicciones de humedad.',
+            formula: 'MSE = (1/n) * Σ(ŷ_i - y_i)²'
+        }
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "space-y-4",
+        children: [
+            sections.map((section, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                    className: "glass-effect p-6 rounded-lg border-white/10 hover:border-white/20 transition-all duration-300 animate-fade-in-up",
+                    style: {
+                        animationDelay: `${idx * 100}ms`
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                            className: "text-lg font-semibold text-accent mb-3",
+                            children: section.title
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                            lineNumber: 41,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-neutral-light/80 leading-relaxed mb-4",
+                            children: section.content
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, this),
+                        section.formula && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "bg-black/30 rounded-lg p-4 font-mono text-sm text-accent/80 overflow-x-auto",
+                            children: section.formula
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                            lineNumber: 44,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, idx, true, {
+                    fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                    lineNumber: 40,
+                    columnNumber: 9
+                }, this)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                className: "glass-effect p-6 rounded-lg border-white/10 bg-gradient-to-br from-primary/10 to-accent/10",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "text-lg font-semibold text-neutral-light mb-3",
+                        children: "Cómo funciona RENNOR"
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                        lineNumber: 52,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
+                        className: "space-y-3 text-neutral-light/80",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                className: "flex gap-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold",
+                                        children: "1"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                        lineNumber: 55,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: "Los datos históricos de humedad relativa se normalizan y preparan para el entrenamiento"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                        lineNumber: 56,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                lineNumber: 54,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                className: "flex gap-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold",
+                                        children: "2"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: "La RNN aprende patrones temporales en los datos a través de múltiples epochs"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                        lineNumber: 60,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                lineNumber: 58,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                className: "flex gap-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold",
+                                        children: "3"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                        lineNumber: 63,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: "Los últimos datos históricos se utilizan como entrada para predecir el futuro"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                        lineNumber: 64,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                lineNumber: 62,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                className: "flex gap-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold",
+                                        children: "4"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                        lineNumber: 67,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: "La red predice valores secuenciales de humedad para los días solicitados"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                        lineNumber: 68,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                lineNumber: 66,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                className: "flex gap-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "flex-shrink-0 w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold",
+                                        children: "5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                        lineNumber: 71,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: "Los resultados se visualizan en un gráfico interactivo para análisis"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                        lineNumber: 72,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                                lineNumber: 70,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/frontend/components/rnn-explanation.tsx",
+                lineNumber: 51,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/frontend/components/rnn-explanation.tsx",
+        lineNumber: 38,
+        columnNumber: 5
+    }, this);
+}
+_c = RNNExplanation;
+var _c;
+__turbopack_context__.k.register(_c, "RNNExplanation");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/frontend/components/neural-network-viz.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "NeuralNetworkViz",
+    ()=>NeuralNetworkViz
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/ui/card.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+function NeuralNetworkViz() {
+    _s();
+    const canvasRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "NeuralNetworkViz.useEffect": ()=>{
+            const canvas = canvasRef.current;
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            if (!ctx) return;
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+            const neurons = {
+                input: 5,
+                hidden1: 8,
+                hidden2: 6,
+                output: 1
+            };
+            const positions = {
+                input: Array.from({
+                    length: neurons.input
+                }, {
+                    "NeuralNetworkViz.useEffect": (_, i)=>({
+                            x: 50,
+                            y: canvas.height / (neurons.input + 1) * (i + 1)
+                        })
+                }["NeuralNetworkViz.useEffect"]),
+                hidden1: Array.from({
+                    length: neurons.hidden1
+                }, {
+                    "NeuralNetworkViz.useEffect": (_, i)=>({
+                            x: 250,
+                            y: canvas.height / (neurons.hidden1 + 1) * (i + 1)
+                        })
+                }["NeuralNetworkViz.useEffect"]),
+                hidden2: Array.from({
+                    length: neurons.hidden2
+                }, {
+                    "NeuralNetworkViz.useEffect": (_, i)=>({
+                            x: 450,
+                            y: canvas.height / (neurons.hidden2 + 1) * (i + 1)
+                        })
+                }["NeuralNetworkViz.useEffect"]),
+                output: [
+                    {
+                        x: 650,
+                        y: canvas.height / 2
+                    }
+                ]
+            };
+            let animationTime = 0;
+            const animate = {
+                "NeuralNetworkViz.useEffect.animate": ()=>{
+                    animationTime += 0.005;
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.globalAlpha = 0.6;
+                    // Draw connections with gradient
+                    const layers = [
+                        [
+                            positions.input,
+                            positions.hidden1
+                        ],
+                        [
+                            positions.hidden1,
+                            positions.hidden2
+                        ],
+                        [
+                            positions.hidden2,
+                            positions.output
+                        ]
+                    ];
+                    layers.forEach({
+                        "NeuralNetworkViz.useEffect.animate": (layer, layerIdx)=>{
+                            const [from, to] = layer;
+                            from.forEach({
+                                "NeuralNetworkViz.useEffect.animate": (fromPos)=>{
+                                    to.forEach({
+                                        "NeuralNetworkViz.useEffect.animate": (toPos)=>{
+                                            const gradient = ctx.createLinearGradient(fromPos.x, fromPos.y, toPos.x, toPos.y);
+                                            gradient.addColorStop(0, 'rgba(100, 181, 246, 0.3)');
+                                            gradient.addColorStop(1, 'rgba(90, 127, 143, 0.3)');
+                                            ctx.strokeStyle = gradient;
+                                            ctx.lineWidth = 1.5;
+                                            ctx.beginPath();
+                                            ctx.moveTo(fromPos.x, fromPos.y);
+                                            ctx.lineTo(toPos.x, toPos.y);
+                                            ctx.stroke();
+                                        }
+                                    }["NeuralNetworkViz.useEffect.animate"]);
+                                }
+                            }["NeuralNetworkViz.useEffect.animate"]);
+                        }
+                    }["NeuralNetworkViz.useEffect.animate"]);
+                    ctx.globalAlpha = 1;
+                    // Draw neurons
+                    const allNeurons = [
+                        ...positions.input,
+                        ...positions.hidden1,
+                        ...positions.hidden2,
+                        ...positions.output
+                    ];
+                    allNeurons.forEach({
+                        "NeuralNetworkViz.useEffect.animate": (pos, idx)=>{
+                            const pulse = Math.sin(animationTime + idx * 0.3) * 0.5 + 0.5;
+                            const gradient = ctx.createRadialGradient(pos.x, pos.y, 0, pos.x, pos.y, 8);
+                            gradient.addColorStop(0, `rgba(100, 181, 246, ${0.8 + pulse * 0.2})`);
+                            gradient.addColorStop(1, `rgba(90, 127, 143, ${0.4 + pulse * 0.1})`);
+                            ctx.fillStyle = gradient;
+                            ctx.beginPath();
+                            ctx.arc(pos.x, pos.y, 6 + pulse * 2, 0, Math.PI * 2);
+                            ctx.fill();
+                            ctx.strokeStyle = 'rgba(245, 245, 240, 0.5)';
+                            ctx.lineWidth = 2;
+                            ctx.stroke();
+                        }
+                    }["NeuralNetworkViz.useEffect.animate"]);
+                    requestAnimationFrame(animate);
+                }
+            }["NeuralNetworkViz.useEffect.animate"];
+            animate();
+        }
+    }["NeuralNetworkViz.useEffect"], []);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+        className: "glass-effect p-6 rounded-lg border-white/10",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                className: "text-lg font-semibold text-neutral-light mb-4",
+                children: "Visualización de la Red Neuronal"
+            }, void 0, false, {
+                fileName: "[project]/frontend/components/neural-network-viz.tsx",
+                lineNumber: 110,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("canvas", {
+                ref: canvasRef,
+                className: "w-full h-64 rounded-lg bg-black/20"
+            }, void 0, false, {
+                fileName: "[project]/frontend/components/neural-network-viz.tsx",
+                lineNumber: 111,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "text-xs text-neutral-light/60 mt-3 text-center",
+                children: "Arquitectura RNN: 5 entrada → 8 oculta → 6 oculta → 1 salida"
+            }, void 0, false, {
+                fileName: "[project]/frontend/components/neural-network-viz.tsx",
+                lineNumber: 115,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/frontend/components/neural-network-viz.tsx",
+        lineNumber: 109,
+        columnNumber: 5
+    }, this);
+}
+_s(NeuralNetworkViz, "UJgi7ynoup7eqypjnwyX/s32POg=");
+_c = NeuralNetworkViz;
+var _c;
+__turbopack_context__.k.register(_c, "NeuralNetworkViz");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/frontend/lib/api.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getPrediction",
+    ()=>getPrediction
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+const API_BASE_URL = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_API_URL || "";
+async function getPrediction(diasFuturos) {
+    try {
+        const response = await fetch("/api/predict", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                dias_futuros: diasFuturos
+            })
+        });
+        if (!response.ok) {
+            const errorData = await response.json().catch(()=>({}));
+            throw new Error(errorData.error || `Error en la predicción: ${response.statusText}`);
+        }
+        const data = await response.json();
+        if (data.error || !data.success) {
+            throw new Error(data.error || "Error al generar predicción");
+        }
+        return {
+            success: true,
+            predicciones: data.predicciones,
+            metricas: data.metricas,
+            datos_comparacion: data.datos_comparacion
+        };
+    } catch (error) {
+        console.error("[API] Error fetching prediction:", error);
+        throw error;
+    }
+}
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/frontend/app/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Home
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/header.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$prediction$2d$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/prediction-form.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$prediction$2d$chart$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/prediction-chart.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$stats$2d$display$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/stats-display.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$metrics$2d$display$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/metrics-display.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$rnn$2d$explanation$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/rnn-explanation.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$neural$2d$network$2d$viz$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/components/neural-network-viz.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/lib/api.ts [app-client] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module '@/components'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function Home() {
+    _s();
+    const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("prediccion");
+    const [predictions, setPredictions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [metrics, setMetrics] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [comparisonData, setComparisonData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [chartData, setChartData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const handlePrediction = async (dias)=>{
+        setIsLoading(true);
+        setError(null);
+        try {
+            const response = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getPrediction"])(dias);
+            const data = response.predicciones;
+            setPredictions(data);
+            setMetrics(response.metricas);
+            setComparisonData(response.datos_comparacion || null);
+            const formatted = data.map((humedad, idx)=>({
+                    dia: idx + 1,
+                    humedad
+                }));
+            setChartData(formatted);
+        } catch (err) {
+            const errorMsg = err instanceof Error ? err.message : "Error al generar predicción";
+            setError(errorMsg);
+            console.error(errorMsg);
+        } finally{
+            setIsLoading(false);
+        }
+    };
+    const tabs = [
+        {
+            id: "prediccion",
+            label: "Predicción"
+        },
+        {
+            id: "info",
+            label: "Información RNN"
+        }
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+        className: "min-h-screen bg-gradient-to-br from-neutral-dark via-neutral-dark to-primary-dark",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Header"], {}, void 0, false, {
+                fileName: "[project]/frontend/app/page.tsx",
+                lineNumber: 70,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-6xl mx-auto px-4 py-8",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex gap-2 mb-8 border-b border-white/10 pb-4",
+                        children: tabs.map((tab)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>{
+                                    setActiveTab(tab.id);
+                                    setError(null);
+                                },
+                                className: `px-4 py-2 rounded-lg transition-all duration-300 font-medium text-sm ${activeTab === tab.id ? "bg-primary text-neutral-light shadow-lg shadow-primary/50" : "text-neutral-light/70 hover:text-neutral-light hover:bg-white/5"}`,
+                                children: tab.label
+                            }, tab.id, false, {
+                                fileName: "[project]/frontend/app/page.tsx",
+                                lineNumber: 76,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/app/page.tsx",
+                        lineNumber: 74,
+                        columnNumber: 9
+                    }, this),
+                    error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-6 p-4 bg-red-500/10 border border-red-500/30 rounded-lg text-red-300 text-sm",
+                        children: error
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/app/page.tsx",
+                        lineNumber: 95,
+                        columnNumber: 11
+                    }, this),
+                    activeTab === "prediccion" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "space-y-6 animate-fade-in-up",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PredictionForm, {
+                                onSubmit: handlePrediction,
+                                isLoading: isLoading
+                            }, void 0, false, {
+                                fileName: "[project]/frontend/app/page.tsx",
+                                lineNumber: 101,
+                                columnNumber: 13
+                            }, this),
+                            chartData && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PredictionChart, {
+                                        data: chartData,
+                                        isLoading: isLoading
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/app/page.tsx",
+                                        lineNumber: 105,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$stats$2d$display$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StatsDisplay"], {
+                                        data: predictions
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/app/page.tsx",
+                                        lineNumber: 106,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$components$2f$metrics$2d$display$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MetricsDisplay"], {
+                                        metrics: metrics
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/app/page.tsx",
+                                        lineNumber: 107,
+                                        columnNumber: 17
+                                    }, this),
+                                    comparisonData && comparisonData.fechas_pasadas.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all duration-300",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ComparisonChart, {
+                                            fechas: comparisonData.fechas_pasadas,
+                                            valoresReales: comparisonData.valores_reales,
+                                            valoresPredichos: comparisonData.valores_predichos
+                                        }, void 0, false, {
+                                            fileName: "[project]/frontend/app/page.tsx",
+                                            lineNumber: 111,
+                                            columnNumber: 21
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/app/page.tsx",
+                                        lineNumber: 110,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true),
+                            !chartData && !isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-center py-12 text-neutral-light/60",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-lg",
+                                    children: "Ingresa el número de días para comenzar la predicción"
+                                }, void 0, false, {
+                                    fileName: "[project]/frontend/app/page.tsx",
+                                    lineNumber: 123,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/frontend/app/page.tsx",
+                                lineNumber: 122,
+                                columnNumber: 15
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/frontend/app/page.tsx",
+                        lineNumber: 100,
+                        columnNumber: 11
+                    }, this),
+                    activeTab === "info" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "space-y-6 animate-fade-in-up",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(NeuralNetworkViz, {}, void 0, false, {
+                                fileName: "[project]/frontend/app/page.tsx",
+                                lineNumber: 131,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RNNExplanation, {}, void 0, false, {
+                                fileName: "[project]/frontend/app/page.tsx",
+                                lineNumber: 132,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/frontend/app/page.tsx",
+                        lineNumber: 130,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/frontend/app/page.tsx",
+                lineNumber: 72,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+                className: "border-t border-white/10 mt-12 py-6",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-6xl mx-auto px-4 text-center text-neutral-light/50 text-xs",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            children: "RENNOR - Red Neuronal Recurrente para Predicción de Humedad Relativa"
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/app/page.tsx",
+                            lineNumber: 140,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            children: "Desarrollado con React, Next.js y TensorFlow"
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/app/page.tsx",
+                            lineNumber: 141,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/frontend/app/page.tsx",
+                    lineNumber: 139,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/frontend/app/page.tsx",
+                lineNumber: 138,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/frontend/app/page.tsx",
+        lineNumber: 69,
+        columnNumber: 5
+    }, this);
+}
+_s(Home, "4OLTG9T4Y7l4xu7+w3sPFHvHAHQ=");
+_c = Home;
+var _c;
+__turbopack_context__.k.register(_c, "Home");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=frontend_1d480ca0._.js.map

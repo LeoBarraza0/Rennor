@@ -1,15 +1,17 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import { Header } from '@/components/header'
-import { PredictionForm } from '@/components/prediction-form'
-import { PredictionChart } from '@/components/prediction-chart'
-import { StatsDisplay } from '@/components/stats-display'
-import { RNNExplanation } from '@/components/rnn-explanation'
-import { NeuralNetworkViz } from '@/components/neural-network-viz'
-import { getPrediction } from '@/lib/api'
+import { useState } from "react"
+import { Header } from "@/components/header"
+import { PredictionForm } from "@/components/prediction-form"
+import { PredictionChart } from "@/components/prediction-chart"
+import { StatsDisplay } from "@/components/stats-display"
+import { MetricsDisplay } from "@/components/metrics-display"
+import { RNNExplanation } from "@/components/rnn-explanation"
+import { NeuralNetworkViz } from "@/components/neural-network-viz"
+import { getPrediction } from "@/lib/api"
+import type { Metrics } from "@/lib/api"
 
-type TabType = 'prediccion' | 'info'
+type TabType = "prediccion" | "info"
 
 interface ChartData {
   dia: number
@@ -17,8 +19,9 @@ interface ChartData {
 }
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<TabType>('prediccion')
+  const [activeTab, setActiveTab] = useState<TabType>("prediccion")
   const [predictions, setPredictions] = useState<number[] | null>(null)
+  const [metrics, setMetrics] = useState<Metrics | null>(null)
   const [chartData, setChartData] = useState<ChartData[] | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -28,8 +31,10 @@ export default function Home() {
     setError(null)
 
     try {
-      const data = await getPrediction(dias)
+      const response = await getPrediction(dias)
+      const data = response.predicciones
       setPredictions(data)
+      setMetrics(response.metricas)
 
       const formatted = data.map((humedad, idx) => ({
         dia: idx + 1,
@@ -38,7 +43,7 @@ export default function Home() {
 
       setChartData(formatted)
     } catch (err) {
-      const errorMsg = err instanceof Error ? err.message : 'Error al generar predicción'
+      const errorMsg = err instanceof Error ? err.message : "Error al generar predicción"
       setError(errorMsg)
       console.error(errorMsg)
     } finally {
@@ -47,8 +52,8 @@ export default function Home() {
   }
 
   const tabs = [
-    { id: 'prediccion', label: 'Predicción' },
-    { id: 'info', label: 'Información RNN' },
+    { id: "prediccion", label: "Predicción" },
+    { id: "info", label: "Información RNN" },
   ] as const
 
   return (
@@ -67,8 +72,8 @@ export default function Home() {
               }}
               className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-sm ${
                 activeTab === tab.id
-                  ? 'bg-primary text-neutral-light shadow-lg shadow-primary/50'
-                  : 'text-neutral-light/70 hover:text-neutral-light hover:bg-white/5'
+                  ? "bg-primary text-neutral-light shadow-lg shadow-primary/50"
+                  : "text-neutral-light/70 hover:text-neutral-light hover:bg-white/5"
               }`}
             >
               {tab.label}
@@ -78,13 +83,11 @@ export default function Home() {
 
         {/* Error Display */}
         {error && (
-          <div className="mb-6 p-4 bg-red-500/10 border border-red-500/30 rounded-lg text-red-300 text-sm">
-            {error}
-          </div>
+          <div className="mb-6 p-4 bg-red-500/10 border border-red-500/30 rounded-lg text-red-300 text-sm">{error}</div>
         )}
 
         {/* Tab Content */}
-        {activeTab === 'prediccion' && (
+        {activeTab === "prediccion" && (
           <div className="space-y-6 animate-fade-in-up">
             <PredictionForm onSubmit={handlePrediction} isLoading={isLoading} />
 
@@ -92,6 +95,7 @@ export default function Home() {
               <>
                 <PredictionChart data={chartData} isLoading={isLoading} />
                 <StatsDisplay data={predictions} />
+                <MetricsDisplay metrics={metrics} />
               </>
             )}
 
@@ -103,7 +107,7 @@ export default function Home() {
           </div>
         )}
 
-        {activeTab === 'info' && (
+        {activeTab === "info" && (
           <div className="space-y-6 animate-fade-in-up">
             <NeuralNetworkViz />
             <RNNExplanation />

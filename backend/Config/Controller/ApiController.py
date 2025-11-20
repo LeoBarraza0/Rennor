@@ -8,37 +8,18 @@ from datetime import datetime, timedelta
 routes_Api = Blueprint('api', __name__)
 
 @routes_Api.route('/prediccion', methods=['POST', 'OPTIONS'])
+@routes_Api.route('/prediccion', methods=['POST', 'OPTIONS'])
 def prediccion():
     """
     Endpoint para generar predicción RNN de humedad relativa
-    
-    Request body:
-    {
-        "dias_futuros": 7
-    }
-    
-    Response:
-    {
-        "success": true,
-        "predicciones": [45.2, 46.1, 44.8, ...],
-        "dias": 7,
-        "metricas": {
-            "mse": 45.23,
-            "rmse": 6.73,
-            "mae": 5.12
-        },
-        "fechas": ["2025-01-18", "2025-01-19", ...]
-    }
     """
     if request.method == 'OPTIONS':
         return '', 204
     
     try:
-        # Obtener parámetros del request
         data = request.get_json()
         dias_futuros = int(data.get('dias_futuros', 7))
         
-        # Validaciones
         if dias_futuros < 1 or dias_futuros > 30:
             return jsonify({
                 'success': False,
@@ -58,11 +39,14 @@ def prediccion():
         print(f"[PREDICCION] Generando predicción para {dias_futuros} días...")
         print(f"[PREDICCION] Usando archivo: {csv_path}")
         
-        predicciones = generar_prediccion(
+        resultado = generar_prediccion(
             pasos_futuros=dias_futuros,
             csv_path=csv_path,
             verbose=1
         )
+        
+        predicciones = resultado['predicciones']
+        metricas = resultado['metricas']
         
         if not predicciones:
             return jsonify({
@@ -75,13 +59,14 @@ def prediccion():
         
         return jsonify({
             'success': True,
-            'predicciones': [float(p) for p in predicciones],
+            'predicciones': predicciones,
             'dias': dias_futuros,
             'fechas': fechas,
             'metricas': {
-                'mse': 45.23,
-                'rmse': 6.73,
-                'mae': 5.12
+                'mse': round(metricas['mse'], 2),
+                'rmse': round(metricas['rmse'], 2),
+                'mae': round(metricas['mae'], 2),
+                'r_squared': round(metricas['r_squared'], 4)
             },
             'timestamp': datetime.now().isoformat()
         }), 200

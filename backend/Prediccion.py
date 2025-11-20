@@ -8,17 +8,17 @@ from tensorflow.keras.layers import SimpleRNN, Dense, Dropout
 from tensorflow.keras.optimizers import Adam
 import os
 
-# Función para generar predicción
 def generar_prediccion(pasos_futuros, csv_path=None, verbose=0):
     """
-    Genera predicción usando la lógica de Prediccion.py
+    Genera predicción usando RNN para humedad relativa
     Args:
         pasos_futuros: número de pasos a predecir
         csv_path: ruta al CSV (si None, busca en ubicaciones comunes)
         verbose: 0=silencioso, 1=normal, 2=detallado
     Returns:
-        lista de predicciones
+        dict con estructura {'predicciones': [...], 'metricas': {...}}
     """
+    
     # Determinar ruta del CSV
     if csv_path is None:
         csv_path = 'Barranquilla_HR.csv'
@@ -29,7 +29,7 @@ def generar_prediccion(pasos_futuros, csv_path=None, verbose=0):
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f'No se encontró el archivo CSV en: {csv_path}')
     
-    # Lectura de datos limpios
+    # Lectura de datos
     df = pd.read_csv(csv_path, sep=';')
     df['FechaObservacion'] = pd.to_datetime(df['FechaObservacion'], errors='coerce')
     df = df.sort_values('FechaObservacion', ascending=True)
@@ -84,41 +84,69 @@ def generar_prediccion(pasos_futuros, csv_path=None, verbose=0):
 
     model.compile(optimizer=Adam(learning_rate=0.001), loss='mse')
     if verbose > 0:
+        print("Modelo compilado. Iniciando entrenamiento...")
         model.summary()
 
     # Entrenamiento
-    epochs = 50
+    epochs = 100
     batch_size = 8
     model.fit(X_train, y_train, epochs=epochs, batch_size=batch_size, validation_data=(X_test, y_test), verbose=verbose)
 
-    # Predicción y métricas
     pred_norm = model.predict(X_test, verbose=0)
     pred = scaler.inverse_transform(pred_norm)
     y_test_real = scaler.inverse_transform(y_test)
 
-    mse = mean_squared_error(y_test_real, pred)
-    rmse = np.sqrt(mse)
-    mae = mean_absolute_error(y_test_real, pred)
+    mse = float(mean_squared_error(y_test_real, pred))
+    rmse = float(np.sqrt(mse))
+    mae = float(mean_absolute_error(y_test_real, pred))
+    
+    # Calcular R² score
+    ss_res = np.sum((y_test_real - pred) ** 2)
+    ss_tot = np.sum((y_test_real - np.mean(y_test_real)) ** 2)
+    r_squared = float(1 - (ss_res / ss_tot)) if ss_tot != 0 else 0.0
 
     if verbose > 0:
-        print(f"\nMSE: {mse:.4f}  RMSE: {rmse:.4f}  MAE: {mae:.4f}")
+        print(f"\nMétricas del modelo:")
+        print(f"  MSE: {mse:.4f}")
+        print(f"  RMSE: {rmse:.4f}")
+        print(f"  MAE: {mae:.4f}")
+        print(f"  R²: {r_squared:.4f}")
 
-    # Predicción futura
-    def predecir_futuro(model, secuencia_inicial_norm, pasos_futuros):
-        preds = []
-        seq = secuencia_inicial_norm.copy()
-        for _ in range(pasos_futuros):
-            p_norm = model.predict(seq.reshape(1, pasos_atras, 1), verbose=0)
-            p_real = scaler.inverse_transform(p_norm)[0,0]
-            preds.append(float(p_real))
-            seq = np.append(seq[1:], p_norm).reshape(pasos_atras, 1)
-        return preds
-
+    predicciones = []
+    
     if pasos_futuros > 0:
+        def predecir_futuro(model, secuencia_inicial_norm, pasos_futuros):
+            preds = []
+            seq = secuencia_inicial_norm.copy()
+            for _ in range(pasos_futuros):
+                p_norm = model.predict(seq.reshape(1, pasos_atras, 1), verbose=0)
+                p_real = float(scaler.inverse_transform(p_norm)[0, 0])
+                preds.append(p_real)
+                seq = np.append(seq[1:], p_norm).reshape(pasos_atras, 1)
+            return preds
+
         secuencia_inicial = valores_norm[-pasos_atras:].reshape(pasos_atras, 1)
-        futuros = predecir_futuro(model, secuencia_inicial, pasos_futuros)
-        return futuros
-    return []
+        predicciones = predecir_futuro(model, secuencia_inicial, pasos_futuros)
+
+    return {
+        'predicciones': predicciones,
+        'metricas': {
+            'mse': mse,
+            'rmse': rmse,
+            'mae': mae,
+            'r_squared': r_squared
+        }
+    }
+
+
+if __name__ == "__main__":
+    try:
+        pasos_futuros = int(input("¿Cuántos pasos en el futuro deseas predecir?: "))
+        resultado = generar_prediccion(pasos_futuros, verbose=2)
+        print(f"\nPredicciones: {resultado['predicciones']}")
+        print(f"Métricas: {resultado['metricas']}")
+    except Exception as e:
+        print(f"Error: {str(e)}")
 
 # Código que se ejecuta solo cuando se corre el script directamente
 if __name__ == "__main__":
@@ -178,7 +206,7 @@ if __name__ == "__main__":
     model.summary()
 
     # Entrenamiento
-    epochs = 50
+    epochs = 150
     batch_size = 8
     model.fit(X_train, y_train, epochs=epochs, batch_size=batch_size, validation_data=(X_test, y_test), verbose=2)
 

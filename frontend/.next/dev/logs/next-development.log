@@ -1,873 +1,418 @@
-[00:00:06.287] Server  LOG      ✓ Ready in 3.8s
-[00:01:12.785] Server  LOG      ○ Compiling / ...
-[00:01:27.225] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:48.216] Browser ERROR   [v0] Error fetching prediction: {}
-[00:03:48.216] Browser ERROR   Failed to fetch
-[00:05:14.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:19.615] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:40.383] Server  LOG      ✓ Compiled in 193ms
-[00:07:05.118] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:24.121] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:12:24.237] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:12:24.337] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:12:24.364] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:12:24.399] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:12:24.416] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:12:24.419] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:12:24.423] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:12:24.426] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:12:24.452] Server  ERROR   Prediction error: TypeError: fetch failed
-[00:12:25.083] Browser ERROR   [API] Error fetching prediction: {}
-[00:12:25.083] Browser ERROR   Error al generar predicción
-[00:19:21.543] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:19:21.547] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:19:21.549] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:19:21.554] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:19:21.555] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:19:21.557] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:19:21.559] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:19:21.563] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:19:21.565] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:19:21.574] Server  ERROR   Prediction error: TypeError: fetch failed
-[00:19:22.086] Browser ERROR   [API] Error fetching prediction: {}
-[00:19:22.087] Browser ERROR   Error al generar predicción
-[00:26:46.363] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:27:55.467] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:27:55.481] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:27:55.483] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:27:55.486] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:27:55.532] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:27:55.535] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:27:55.539] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:27:55.564] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:27:55.567] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:27:55.579] Server  ERROR   Prediction error: TypeError: fetch failed
-[00:27:56.082] Browser ERROR   [API] Error fetching prediction: {}
-[00:27:56.082] Browser ERROR   Error al generar predicción
-[00:29:27.553] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:31.080] Browser ERROR   [API] Error fetching prediction: {}
-[00:33:31.081] Browser ERROR   Número de días debe estar entre 1 y 30
-[00:12:45.161] Server  LOG      ○ Compiling /api/predict ...
-[00:17:56.355] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:17:56.691] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:17:56.855] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:17:56.920] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:17:56.974] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:17:56.983] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:17:56.995] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:17:57.004] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:17:57.010] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:17:57.030] Server  ERROR   Prediction error: TypeError: fetch failed
-[00:17:57.177] Browser ERROR   [API] Error fetching prediction: {}
-[00:17:57.178] Browser ERROR   Error al generar predicción
-[00:31:25.106] Server  LOG      ✓ Compiled in 4.6s
-[00:31:43.613] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
+[00:00:01.126] Server  LOG      ✓ Ready in 715ms
+[00:00:04.048] Server  ERROR    ⨯ ./frontend/components/ui/button.tsx:2:1
+Module not found: Can't resolve '@/lib/utils'
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export interface ButtonProps
+  5 |   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
+Import map: aliased to relative './lib/utils' inside of [project]/frontend
 
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/button.tsx [Client Component Browser]
+    ./frontend/components/prediction-form.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/button.tsx [Client Component SSR]
+    ./frontend/components/prediction-form.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:31:43.640] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
 
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
+./frontend/components/ui/card.tsx:2:1
+Module not found: Can't resolve '@/lib/utils'
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const Card = React.forwardRef<
+  5 |   HTMLDivElement,
+
+Import map: aliased to relative './lib/utils' inside of [project]/frontend
 
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/card.tsx [Client Component Browser]
+    ./frontend/components/neural-network-viz.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/card.tsx [Client Component SSR]
+    ./frontend/components/neural-network-viz.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:31:43.648] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
 
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
+./frontend/components/ui/input.tsx:2:1
+Module not found: Can't resolve '@/lib/utils'
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export interface InputProps
+  5 |   extends React.InputHTMLAttributes<HTMLInputElement> {}
+
+Import map: aliased to relative './lib/utils' inside of [project]/frontend
 
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/input.tsx [Client Component Browser]
+    ./frontend/components/prediction-form.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/input.tsx [Client Component SSR]
+    ./frontend/components/prediction-form.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:31:43.654] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
+[00:00:05.006] Browser ERROR   uncaughtError: Error: ./frontend/components/ui/button.tsx:2:1
+Module not found: Can't resolve '@/lib/utils'
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export interface ButtonProps
+  5 |   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
+Import map: aliased to relative './lib/utils' inside of [project]/frontend
 
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/button.tsx [Client Component Browser]
+    ./frontend/components/prediction-form.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/button.tsx [Client Component SSR]
+    ./frontend/components/prediction-form.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:31:43.746] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
+[00:00:05.166] Browser ERROR   ./frontend/components/ui/button.tsx:2:1
+Module not found: Can't resolve '@/lib/utils'
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export interface ButtonProps
+  5 |   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+Import map: aliased to relative './lib/utils' inside of [project]/frontend
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/button.tsx [Client Component Browser]
+    ./frontend/components/prediction-form.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/button.tsx [Client Component SSR]
+    ./frontend/components/prediction-form.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[00:00:05.166] Browser ERROR   ./frontend/components/ui/card.tsx:2:1
+Module not found: Can't resolve '@/lib/utils'
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const Card = React.forwardRef<
+  5 |   HTMLDivElement,
 
-
-[00:31:43.756] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+Import map: aliased to relative './lib/utils' inside of [project]/frontend
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/card.tsx [Client Component Browser]
+    ./frontend/components/neural-network-viz.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/card.tsx [Client Component SSR]
+    ./frontend/components/neural-network-viz.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[00:00:05.166] Browser ERROR   ./frontend/components/ui/input.tsx:2:1
+Module not found: Can't resolve '@/lib/utils'
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export interface InputProps
+  5 |   extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-
-[00:31:43.764] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+Import map: aliased to relative './lib/utils' inside of [project]/frontend
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/input.tsx [Client Component Browser]
+    ./frontend/components/prediction-form.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/input.tsx [Client Component SSR]
+    ./frontend/components/prediction-form.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[00:00:05.166] Browser ERROR   ./frontend/components/ui/button.tsx:2:1
+Module not found: Can't resolve '@/lib/utils'
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export interface ButtonProps
+  5 |   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
-
-[00:31:43.787] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+Import map: aliased to relative './lib/utils' inside of [project]/frontend
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/button.tsx [Client Component Browser]
+    ./frontend/components/prediction-form.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/button.tsx [Client Component SSR]
+    ./frontend/components/prediction-form.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[00:00:05.166] Browser ERROR   ./frontend/components/ui/card.tsx:2:1
+Module not found: Can't resolve '@/lib/utils'
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const Card = React.forwardRef<
+  5 |   HTMLDivElement,
 
-
-[00:31:43.803] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+Import map: aliased to relative './lib/utils' inside of [project]/frontend
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/card.tsx [Client Component Browser]
+    ./frontend/components/neural-network-viz.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/card.tsx [Client Component SSR]
+    ./frontend/components/neural-network-viz.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[00:00:05.167] Browser ERROR   ./frontend/components/ui/input.tsx:2:1
+Module not found: Can't resolve '@/lib/utils'
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export interface InputProps
+  5 |   extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-
-[00:31:43.822] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+Import map: aliased to relative './lib/utils' inside of [project]/frontend
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/input.tsx [Client Component Browser]
+    ./frontend/components/prediction-form.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/input.tsx [Client Component SSR]
+    ./frontend/components/prediction-form.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[00:00:47.924] Browser ERROR   ./frontend/components/ui/button.tsx:2:1
+Export cn doesn't exist in target module
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export interface ButtonProps
+  5 |   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
-
-[00:31:43.831] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+The export cn was not found in module [project]/frontend/lib/utils.ts [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/button.tsx [Client Component Browser]
+    ./frontend/components/prediction-form.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/button.tsx [Client Component SSR]
+    ./frontend/components/prediction-form.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
+[00:00:47.924] Browser ERROR   ./frontend/components/ui/button.tsx:2:1
+Export cn doesn't exist in target module
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export interface ButtonProps
+  5 |   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:43.837] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+The export cn was not found in module [project]/frontend/lib/utils.ts [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/button.tsx [Client Component Browser]
+    ./frontend/components/prediction-form.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/button.tsx [Client Component SSR]
+    ./frontend/components/prediction-form.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
+[00:00:47.924] Browser ERROR   ./frontend/components/ui/card.tsx:2:1
+Export cn doesn't exist in target module
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const Card = React.forwardRef<
+  5 |   HTMLDivElement,
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:43.868] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+The export cn was not found in module [project]/frontend/lib/utils.ts [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/card.tsx [Client Component Browser]
+    ./frontend/components/neural-network-viz.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/card.tsx [Client Component SSR]
+    ./frontend/components/neural-network-viz.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
+[00:00:47.924] Browser ERROR   ./frontend/components/ui/card.tsx:2:1
+Export cn doesn't exist in target module
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const Card = React.forwardRef<
+  5 |   HTMLDivElement,
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:43.878] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+The export cn was not found in module [project]/frontend/lib/utils.ts [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/card.tsx [Client Component Browser]
+    ./frontend/components/neural-network-viz.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/card.tsx [Client Component SSR]
+    ./frontend/components/neural-network-viz.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
+[00:00:47.924] Browser ERROR   ./frontend/components/ui/input.tsx:2:1
+Export cn doesn't exist in target module
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export interface InputProps
+  5 |   extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:43.887] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+The export cn was not found in module [project]/frontend/lib/utils.ts [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/input.tsx [Client Component Browser]
+    ./frontend/components/prediction-form.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/input.tsx [Client Component SSR]
+    ./frontend/components/prediction-form.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
+[00:00:47.924] Browser ERROR   ./frontend/components/ui/input.tsx:2:1
+Export cn doesn't exist in target module
+  1 | import * as React from 'react'
+> 2 | import { cn } from '@/lib/utils'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export interface InputProps
+  5 |   extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:43.907] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
+The export cn was not found in module [project]/frontend/lib/utils.ts [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import traces:
   Client Component Browser:
+    ./frontend/components/ui/input.tsx [Client Component Browser]
+    ./frontend/components/prediction-form.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Client Component Browser]
     ./frontend/app/page.tsx [Server Component]
 
   Client Component SSR:
+    ./frontend/components/ui/input.tsx [Client Component SSR]
+    ./frontend/components/prediction-form.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Client Component SSR]
     ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:43.948] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:43.973] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:43.987] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:43.992] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:44.003] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:44.011] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:44.023] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:44.085] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:44.110] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:44.252] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:44.303] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:44.319] Server  ERROR    ⨯ ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:31:44.336] Server  LOG      ✓ Compiled in 5.6s
-[00:33:15.105] Server  LOG      ✓ Compiled in 11.9s
-[00:33:26.875] Server  LOG      ✓ Compiled in 587ms
-[00:33:51.750] Browser ERROR   ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:33:51.750] Browser ERROR   ./frontend/app/page.tsx:8:1
-Module not found: Can't resolve '@/components/metrics-display'
-   6 | import { PredictionChart } from "@/components/prediction-chart"
-   7 | import { StatsDisplay } from "@/components/stats-display"
->  8 | import { MetricsDisplay } from "@/components/metrics-display"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   9 | import { RNNExplanation } from "@/components/rnn-explanation"
-  10 | import { NeuralNetworkViz } from "@/components/neural-network-viz"
-  11 | import { getPrediction } from "@/lib/api"
-
-Import map: aliased to relative './components/metrics-display' inside of [project]/frontend
-
-Import traces:
-  Client Component Browser:
-    ./frontend/app/page.tsx [Client Component Browser]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/app/page.tsx [Client Component SSR]
-    ./frontend/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:34:01.979] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:39:21.571] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:39:21.714] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:39:21.753] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:39:21.813] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:39:21.861] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:39:21.910] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:39:21.962] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:39:22.025] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:39:22.063] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:39:22.159] Server  ERROR   Prediction error: TypeError: fetch failed
-[00:39:22.477] Browser ERROR   [API] Error fetching prediction: {}
-[00:39:22.477] Browser ERROR   Error al generar predicción
-[00:44:48.809] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:44:48.867] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:44:48.870] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:44:48.895] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:44:48.900] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:44:48.902] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:44:48.904] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:44:48.913] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:44:48.918] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:44:48.926] Server  ERROR   Prediction error: Error: Flask error: INTERNAL SERVER ERROR
-[00:44:49.042] Browser ERROR   [API] Error fetching prediction: {}
-[00:44:49.042] Browser ERROR   Error al generar predicción
-[00:52:55.555] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:58:08.842] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:58:08.861] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:58:08.865] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:58:08.879] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:58:08.892] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:58:08.896] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:58:08.898] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:58:08.912] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:58:08.915] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:58:08.932] Server  ERROR   Prediction error: TypeError: fetch failed
-[00:58:09.079] Browser ERROR   [API] Error fetching prediction: {}
-[00:58:09.079] Browser ERROR   Error al generar predicción
-[00:58:43.394] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:09:32.997] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:09:33.004] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:09:33.007] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:09:33.021] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:09:33.036] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:09:33.039] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:09:33.054] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:09:33.056] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:09:33.058] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:09:33.106] Server  ERROR   Prediction error: TypeError: fetch failed
-[01:09:33.372] Browser ERROR   [API] Error fetching prediction: {}
-[01:09:33.372] Browser ERROR   Error al generar predicción
-[01:15:16.332] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\[root-of-the-server]__18682812._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:15:16.384] Server  ERROR   C:\www\Rennor\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:15:16.401] Server  ERROR   C:\www\Rennor\frontend\.next\dev\server\chunks\node_modules_next_4a8549be._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:15:16.421] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:15:16.427] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:15:16.432] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:15:16.438] Server  ERROR   C:\www\Rennor\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:15:16.442] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:15:16.446] Server  ERROR   C:\www\Rennor\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:15:16.461] Server  ERROR   Prediction error: TypeError: fetch failed
-[01:15:16.996] Browser ERROR   [API] Error fetching prediction: {}
-[01:15:16.996] Browser ERROR   Error al generar predicción
+[00:00:47.940] Server  LOG      ✓ Compiled in 59ms
+[00:00:48.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:14.429] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
